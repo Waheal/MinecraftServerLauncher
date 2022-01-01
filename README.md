@@ -3,16 +3,17 @@
 我的世界开服器，小白必备，方便快捷！
 
 视频介绍：https://www.bilibili.com/video/BV1uy4y1n717
+https://www.bilibili.com/video/BV1na41167sV
 
-软件运行环境： .NET Framework 4.8
+软件运行环境： .NET Framework 4.7.2
 
 软件所用packages：
 
 1.ControlzEx.5.0.1
 
-2.MahApps.Metro.2.4.7
+2.MahApps.Metro.2.4.9
 
-3.Microsoft.Xaml.Behaviors.Wpf.1.1.31
+3.Microsoft.Xaml.Behaviors.Wpf.1.1.39
 
 4.Newtonsoft.Json.13.0.1
 
