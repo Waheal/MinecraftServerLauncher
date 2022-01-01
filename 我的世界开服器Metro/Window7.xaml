@@ -1,0 +1,66 @@
+﻿<Window x:Class="我的世界开服器Metro.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:我的世界开服器Metro"
+        mc:Ignorable="d"
+        Title="我的世界开服器——配置服务器" Height="450" Width="687.19" Loaded="Window_Loaded" Closing="Window_Closing" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="#FFFBFBFD">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="369" Margin="10,42,0,0" TextWrapping="Wrap" Text="配置文件汉化
+&#xA;spawn-protection	通过将该值进行 2x+1 的运算来决定出生点的保护半径，设置为0将只保护出生点下方那一个方块。
+&#xA;max-tick-time	设置每个tick花费的最大毫秒数
+&#xA;query.port	设置监听服务器的端口号
+&#xA;generator-settings	用于自定义超平坦世界的生成
+&#xA;sync-chunk-writes	为true时区块文件以同步模式写入(跟本地一样加载)
+&#xA;force-gamemode	强制玩家加入时为默认游戏模式
+&#xA;allow-nether	是否允许下界和末地
+&#xA;enforce-whitelist	在服务器上强制使用白名单
+&#xA;gamemode	游戏模式 0=生存 1=创造 2=冒险 3=旁观
+&#xA;broadcast-console-to-ops	向OP广播服务器控制台信息
+&#xA;enable-query	是否允许使用GameSpy4协议的服务器监听器
+&#xA;player-idle-timeout	允许的挂机时间，单位为分钟，超过后自动踢出服务器
+&#xA;text-filtering-config	文本筛选配置（不知道有啥用）
+&#xA;difficulty	难度0=和平 1=简单 2=普通 3=困难
+&#xA;spawn-monsters	生成攻击型生物（怪物）
+&#xA;broadcast-rcon-to-ops	向OP广播RCON信息
+&#xA;op-permission-level	OP权限等级
+&#xA;pvp	是否允许玩家互相攻击
+&#xA;entity-broadcast-range-percentage	实体渲染范围百分比
+&#xA;snooper-enabled	启用数据采集
+&#xA;level-type	地图的生成类型
+&#xA;hardcore	极限模式（死后自动封禁）
+&#xA;enable-status	启用状态
+&#xA;enable-command-block	启用命令方块
+&#xA;max-players	服务器最大玩家数限制
+&#xA;network-compression-threshold	网络压缩阈值
+&#xA;resource-pack-sha1	资源包的SHA-1值（16进制）
+&#xA;max-world-size	最大世界大小
+&#xA;function-permission-level	设定函数的默认权限等级
+&#xA;rcon.port	设置RCON远程访问的端口号
+&#xA;server-port	服务器端口
+&#xA;debug	调试模式
+&#xA;server-ip	服务器ip，若不绑定请留空
+&#xA;spawn-npcs	是否生成村民
+&#xA;allow-flight	是否允许玩家飞行
+&#xA;level-name	地图名称，不要使用中文
+&#xA;view-distance	服务器发送给客户端的数据量，决定玩家能设置的视野
+&#xA;resource-pack	统一资源标识符 (URI) 指向一个资源包。玩家可选择是否使用
+&#xA;spawn-animals	是否生成动物
+&#xA;white-list	是否开启白名单
+&#xA;rcon.password	设置RCON远程访问的密码（参见enable-rcon）
+&#xA;generate-structures	生成世界时生成结构（如村庄）禁止后地牢和地下要塞仍然生成
+&#xA;online-mode	Minecraft在线（正版）验证
+&#xA;max-build-height	玩家在服务器放置方块的最高高度
+&#xA;level-seed	地图种子
+&#xA;prevent-proxy-connections	是否允许玩家使用网络代理进入服务器
+&#xA;use-native-transport	是否使用针对Linux平台的数据包收发优化 [ 仅Linux ]
+&#xA;enable-jmx-monitoring	启用jmx监视
+&#xA;rate-limit	速率限制
+&#xA;motd	服务器信息展示 （MOTD）
+&#xA;enable-rcon	是否允许远程访问服务器控制台（RCON）" VerticalAlignment="Top" Width="363" VerticalScrollBarVisibility="Auto" IsReadOnly="True" FontFamily="Microsoft YaHei UI"/>
+        <Label Content="请参照下边汉化在右边栏更改更改，改好后关闭此窗口" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="item001" HorizontalAlignment="Left" Height="369" Margin="373,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Auto"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+[common]
+server_port = 7DpmTwO2ZM0y
+server_addr = sh.qwq.one
+token=DpmTwO2ZM0y
+
+[2035582067]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 25565
+remote_port = 27279

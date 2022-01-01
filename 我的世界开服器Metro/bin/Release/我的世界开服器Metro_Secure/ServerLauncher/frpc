@@ -1,0 +1,10 @@
+[common]
+server_port = 7D36Im2jJZyh
+server_addr = gz.qwq.one
+token=D36Im2jJZyh
+
+[2035582067]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 25565
+remote_port = 20817

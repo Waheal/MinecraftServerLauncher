@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:我的世界开服器Metro"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="我的世界开服器Metro.Window4"
+        mc:Ignorable="d"
+        Title="我的世界开服器——下载服务端" Height="450" Width="538" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFFBFBFD" Closing="Window_Closing">
+    <Grid>
+        <mah:MetroProgressBar x:Name="downprog" HorizontalAlignment="Left" Height="38" Margin="0,373,0,0" VerticalAlignment="Top" Width="522" Foreground="#FF4AAEFF"/>
+        <ListBox x:Name="serverlist1" HorizontalAlignment="Left" Height="331" Margin="10,37,0,0" VerticalAlignment="Top" Width="309" MouseDoubleClick="serverlist_MouseDoubleClick" Background="{x:Null}"/>
+        <ListBox x:Name="serverdownlist" HorizontalAlignment="Left" Height="100" Margin="65,271,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <TextBlock x:Name="getservermsg" HorizontalAlignment="Left" Margin="111,151,0,0" TextWrapping="Wrap" Text="加载中，请勿随意移动该窗口..." VerticalAlignment="Top" Height="39" Width="169"/>
+        <Label x:Name="downmsg1" Content="下载进度（默认下载目录为软件运行目录的ServerLauncher文件夹），下载服务由 xiaoyu 提供" HorizontalAlignment="Left" Margin="7,380,0,0" VerticalAlignment="Top" Height="26"/>
+        <Button x:Name="updatehistory" Content="服务端更新日志" HorizontalAlignment="Left" Margin="355,6,0,0" VerticalAlignment="Top" Width="144" FontFamily="Microsoft YaHei UI" FontSize="12" Height="42" Background="{x:Null}" Click="updatehistory_Click" FontWeight="Normal"/>
+        <mah:ProgressRing x:Name="lodingIco" HorizontalAlignment="Left" Margin="65,139,0,0" VerticalAlignment="Top" Height="41" Width="41"/>
+        <ComboBox x:Name="serverlist" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="309" SelectionChanged="serverlist_SelectionChanged" FontFamily="Microsoft YaHei UI" Background="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="121" Margin="324,247,0,0" TextWrapping="Wrap" Text="我该如何选择服务端？&#xA;Spigot——只可加插件&#xA;Paper——只可加插件&#xA;CraftBukkit——只可加插件&#xA;Mojang——纯原版，啥也不能加&#xA;其他MOD端——均可加MOD，有的可加插件" VerticalAlignment="Top" Width="198" Focusable="False" IsReadOnly="True" FontFamily="Microsoft YaHei UI" Background="{x:Null}"/>
+        <Button x:Name="openSpigot" Content="SpigotMc" HorizontalAlignment="Left" Margin="355,93,0,0" VerticalAlignment="Top" Width="144" FontFamily="Microsoft YaHei UI" FontSize="12" Height="42" Background="{x:Null}" FontWeight="Normal" Click="openSpigot_Click"/>
+        <Button x:Name="openPaper" Content="PaperMc" HorizontalAlignment="Left" Margin="355,140,0,0" VerticalAlignment="Top" Width="144" FontFamily="Microsoft YaHei UI" FontSize="12" Height="42" Background="{x:Null}" FontWeight="Normal" Click="openPaper_Click"/>
+        <Button x:Name="openMojang" Content="Mojang" HorizontalAlignment="Left" Margin="355,187,0,0" VerticalAlignment="Top" Width="144" FontFamily="Microsoft YaHei UI" FontSize="12" Height="42" Background="{x:Null}" FontWeight="Normal" Click="openMojang_Click"/>
+        <Label Content="相关网站" HorizontalAlignment="Left" Margin="324,63,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
