@@ -1,0 +1,27 @@
+﻿<Window x:Class="我的世界开服器Metro.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:我的世界开服器Metro"
+        mc:Ignorable="d"
+        Title="我的世界开服器——使用教程" Height="450" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="369" Margin="10,40,0,0" VerticalAlignment="Top" Width="90" Source="M(~9]JQF$W4GM9U3D}UX0{5.png"/>
+        <Label Content="开服器各功能说明" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="开启服务器：点击后即可启动服务器，服务器开&#xD;&#xA;启后再次点击将关闭服务器(双击强制关服)" HorizontalAlignment="Left" Margin="100,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="更改服务器设置：如果你想更改服务器的服务端、&#xD;&#xA;Java或者其他参数，就可以点击该按钮进行更改" HorizontalAlignment="Left" Margin="100,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="更改服务器配置文件：即修改你服务器的配置，如&#xD;&#xA;正版验证、启用命令方块等" HorizontalAlignment="Left" Margin="100,168,0,0" VerticalAlignment="Top"/>
+        <Label Content="内网映射：如果你没有公网IP，且你的伙伴进不去&#xD;&#xA;你的服务器，你就需要进行内网映射了，开服器内&#xD;&#xA;网映射是完全免费的" HorizontalAlignment="Left" Margin="100,213,0,0" VerticalAlignment="Top"/>
+        <Label Content="恢复默认设置：即删除你在开服器上所做的所有更&#xD;&#xA;改，恢复为默认设置" HorizontalAlignment="Left" Margin="100,274,0,0" VerticalAlignment="Top"/>
+        <Label Content="关闭托盘图标：即关闭托盘图标，关闭后再次点&#xD;&#xA;击即可打开" HorizontalAlignment="Left" Margin="100,319,0,0" VerticalAlignment="Top"/>
+        <Label Content="使用教程：即该页面" HorizontalAlignment="Left" Margin="100,374,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="419" Margin="391,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Label Content="开服步骤" HorizontalAlignment="Left" Margin="397,0,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="您已经在启动开服器时完成了对您服务器的配置，接下来只需点击&#xD;&#xA;开启服务器 按钮，即可开服" HorizontalAlignment="Left" Margin="415,60,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="577,82,0,0" VerticalAlignment="Top" Width="100" Source="E7K0{~J%7)1US_[IFMF2F_A.png"/>
+        <Label Content="接着，就会出现服务器的控制台界面，你可以在此查看服务器输&#xD;&#xA;出，也可以输入命令，如给玩家管理员权限需要输入：op 玩家名" HorizontalAlignment="Left" Margin="415,182,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="182" Margin="443,227,0,0" VerticalAlignment="Top" Width="318" Source="3R`N1MFSQNTOEKOFMT65CTH.png"/>
+
+    </Grid>
+</Window>

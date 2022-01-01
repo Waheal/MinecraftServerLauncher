@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:我的世界开服器Metro"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="我的世界开服器Metro.Window4"
+        mc:Ignorable="d"
+        Title="我的世界开服器——下载服务端" Height="450" Width="800" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid>
+        <ListBox x:Name="serverlist" HorizontalAlignment="Left" Height="301" Margin="10,37,0,0" VerticalAlignment="Top" Width="158" MouseDoubleClick="serverlist_MouseDoubleClick"/>
+        <ListBox x:Name="serverlist2" HorizontalAlignment="Left" Height="301" Margin="173,37,0,0" VerticalAlignment="Top" Width="151" MouseDoubleClick="serverlist2_MouseDoubleClick"/>
+        <ListBox x:Name="serverlist3" HorizontalAlignment="Left" Height="301" Margin="329,37,0,0" VerticalAlignment="Top" Width="149" MouseDoubleClick="serverlist3_MouseDoubleClick"/>
+        <ListBox x:Name="serverlist4" HorizontalAlignment="Left" Height="301" Margin="483,37,0,0" VerticalAlignment="Top" Width="149" MouseDoubleClick="serverlist4_MouseDoubleClick"/>
+        <ListBox x:Name="serverlist5" HorizontalAlignment="Left" Height="301" Margin="637,37,0,0" VerticalAlignment="Top" Width="145" MouseDoubleClick="serverlist5_MouseDoubleClick"/>
+        <ListBox x:Name="serverdownlist" HorizontalAlignment="Left" Height="100" Margin="65,271,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <ListBox x:Name="serverdownlist2" HorizontalAlignment="Left" Height="100" Margin="224,272,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <ListBox x:Name="serverdownlist3" HorizontalAlignment="Left" Height="100" Margin="352,285,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <ListBox x:Name="serverdownlist4" HorizontalAlignment="Left" Height="100" Margin="483,289,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <ListBox x:Name="serverdownlist5" HorizontalAlignment="Left" Height="100" Margin="613,299,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <TextBlock x:Name="getservermsg" HorizontalAlignment="Left" Margin="324,170,0,0" TextWrapping="Wrap" Text="加载中，请勿随意移动该窗口..." VerticalAlignment="Top" Height="39" Width="169"/>
+        <Label x:Name="downmsg1" Content="下载进度（默认下载目录为软件运行目录的ServerLauncher文件夹），下载服务由 xiaoyu 提供" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top"/>
+        <Label Content="Spigot端(可加插件)              CraftBukkit端(可加插件)       Paper端(可加插件)               Mojang端(纯净端)               其他MOD端(可加MOD)" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="772"/>
+        <Button x:Name="updatehistory" Content="服务端更新日志" HorizontalAlignment="Left" Margin="678,338,0,0" VerticalAlignment="Top" Width="104" FontFamily="Microsoft YaHei UI" FontSize="12" Height="30" Background="{x:Null}" Click="updatehistory_Click" FontWeight="Normal"/>
+        <mah:ProgressRing x:Name="lodingIco" HorizontalAlignment="Left" Margin="278,157,0,0" VerticalAlignment="Top" Height="41" Width="41"/>
+        <mah:MetroProgressBar x:Name="downprog" HorizontalAlignment="Left" Height="38" Margin="0,373,0,0" VerticalAlignment="Top" Width="794"/>
+    </Grid>
+</Window>

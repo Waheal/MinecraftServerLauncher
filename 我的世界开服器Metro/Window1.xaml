@@ -1,0 +1,29 @@
+﻿<Window x:Class="我的世界开服器Metro.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:我的世界开服器Metro"
+        mc:Ignorable="d"
+        Title="公告" Window.SizeToContent="Height" Width="800" AllowsTransparency="True" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="{x:Null}" ResizeMode="NoResize">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Gray"  CornerRadius="10,10,10,10" Name="top" Background="#FFEFF4F9">
+            <Grid x:Name="Grid_Content" Margin="20,20,20,30">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="32"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="TitileText" Text="公告" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="24" FontWeight="Black" />
+                    <TextBlock x:Name="ContentText" Text="内容" FontSize="16" Foreground="#FF646464" Margin="30,20,30,30" HorizontalAlignment="Center"
+                           TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap"/>
+                </StackPanel>
+                <UniformGrid Rows="1" Width="230" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="522,0,0,0">
+                    <Button x:Name="SureBtn" Content="确定" Height="32" VerticalAlignment="Center" Margin="89,0,-105,0" Background="#FFFBFBFD" Foreground="Black" FontFamily="Microsoft YaHei UI" FontSize="16" FontWeight="Normal" Click="SureBtn_Click"/>
+                    <Button x:Name="CancelBtn" Content="取消" Height="32" VerticalAlignment="Center" Margin="-105,0,146,0" Foreground="Black" Background="#FFFBFBFD" FontFamily="Microsoft YaHei UI" FontSize="16" FontWeight="Normal" Click="CancelBtn_Click"/>
+                </UniformGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
