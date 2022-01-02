@@ -1372,20 +1372,6 @@ namespace 我的世界开服器Metro
                 Dispatcher.Invoke(ReadStdOutput1, new object[] { e.Data });
             }
         }
-        public static string DecodeBase64(string code)
-        {
-            string decode = "";
-            byte[] bytes = Convert.FromBase64String(code);
-            try
-            {
-                decode = Encoding.UTF8.GetString(bytes);
-            }
-            catch
-            {
-                decode = code;
-            }
-            return decode;
-        }
         private void ReadStdOutputAction1(string msg)
         {
             frpcOutlog.Text = frpcOutlog.Text + msg;
