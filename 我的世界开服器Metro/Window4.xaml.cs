@@ -49,32 +49,44 @@ namespace 我的世界开服器Metro
             if (serverlist.SelectedIndex.ToString() != "-1")
             {
                 if (serverlist.SelectedItem.ToString() == autoupdate)
-                {
+        {
                     int url1 = serverlist.SelectedIndex;
                     string filename1 = serverlist.SelectedItem.ToString();
                     Url = domain + serverdownlist.Items[url1].ToString();
                     try
-                    {
+            {
                         Filename = AppDomain.CurrentDomain.BaseDirectory + @"ServerLauncher\" + autoupdate.Substring(0, autoupdate.IndexOf("（")) + "-" + serverlist1.SelectedItem.ToString() + ".jar";
-                    }
+            }
                     catch
-                    {
+        {
                         Filename = AppDomain.CurrentDomain.BaseDirectory + @"ServerLauncher\" + autoupdate+ "-" + serverlist1.SelectedItem.ToString() + ".jar";
-                    }
+            }
                     //MessageBox.Show(Url,Filename);
                     Thread thread1 = new Thread(DownloadFile);
                     thread1.Start();
-                }
+        }
                 else
-                {
+        {
                     int url = serverlist.SelectedIndex;
                     string filename = serverlist.SelectedItem.ToString();
                     Url = serverdownlist.Items[url].ToString();
                     Filename = AppDomain.CurrentDomain.BaseDirectory + @"ServerLauncher\" + serverlist.SelectedItem.ToString() + "-" + serverlist1.SelectedItem.ToString() + ".jar";
                     //MessageBox.Show(Url, Filename);
-                    Thread thread = new Thread(DownloadFile);
-                    thread.Start();
-                }
+                Thread thread = new Thread(DownloadFile);
+                thread.Start();
+            }
+        }
+        //服务端下载
+        private void serverlist5_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (serverlist5.SelectedIndex.ToString() != "-1")
+            {
+                int url = serverlist5.SelectedIndex;
+                string filename = serverlist5.SelectedItem.ToString();
+                Url = serverdownlist5.Items[url].ToString();
+                Filename = AppDomain.CurrentDomain.BaseDirectory + @"ServerLauncher\" + filename + ".jar";
+                Thread thread = new Thread(DownloadFile);
+                thread.Start();
             }
         }
         void DownloadFile()
@@ -288,7 +300,7 @@ namespace 我的世界开服器Metro
                     int IndexofA411 = a0001.IndexOf(strtempa111);
                     string Ru411 = a0001.Substring(IndexofA411 + 4);
                     serverdownlist.Items.Add(Ru411.Substring(0, Ru411.IndexOf("\"")));
-                    
+
                     //以下是CraftBukkit端
                     string a002 = a02;
                     while (a002.IndexOf("\",") != -1)
